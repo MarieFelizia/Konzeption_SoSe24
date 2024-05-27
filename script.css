@@ -33,16 +33,16 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#text { 
+.text { 
     
     font-size: 20px;
     color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 5%;
-    margin-top: 30%;
+    
 }
 
-#blindbild { 
+.blindbild { 
     margin-left: 5%; 
 }
 
