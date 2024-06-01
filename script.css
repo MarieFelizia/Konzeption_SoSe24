@@ -1,48 +1,106 @@
 body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    
+    background-color: #f4f4f4;
 }
 
-#schwarzwald {
-    width: 100%;
-    height: 100%;
+.banner {
+    background: url('Walndvonoben.jpg') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+    color: white;
+}
+
+.banner-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Bild hinter den anderen Inhalten */
-}
-
-h1 {
-    position: relative;
-    z-index: 1; /* Überschrift über dem Bild */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 40px;
-    margin-top: 20%; /* Platzierung der Überschrift */
-    color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#subline {
-    position: relative;
-    z-index: 1; /* Überschrift über dem Bild */
+.banner-content h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.intro {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 20px;
-    margin-top: 0%; /* Platzierung der Überschrift */
-    color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.text { 
-    
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 5%;
-    
+
+.container {
+    width: 80%;
+    margin: 20px auto 0;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.blindbild { 
-    margin-left: 5%; 
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
+
+.text, .image {
+    width: 50%;
+}
+
+.text {
+    padding: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Gradient-Effekt für Bilder */
+.image.left img {
+    mask-image: linear-gradient(to left, transparent 0%, white 35%);
+}
+
+.image.right img {
+    mask-image: linear-gradient(to right, transparent 0%, white 35%);
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+/* Für jeden zweiten Schritt die Reihenfolge ändern */
+.step:nth-child(odd) .text {
+    order: 1;
+    text-align: left;
+}
+
+.step:nth-child(odd) .image {
+    order: 2;
+}
+
+.step:nth-child(even) .text {
+    order: 2;
+    text-align: left;
+}
+
+.step:nth-child(even) .image {
+    order: 1;
+}
+
 
