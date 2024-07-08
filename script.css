@@ -1,13 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'MeineSchrift';
+    font-size: 19px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
+@font-face {
+    font-family: 'MeineSchrift';
+    src: url(/3394-font.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+
+}
+
 .banner {
-    background: url('Walndvonoben.jpg') no-repeat center center/cover;
+    background: url(/Bild\ 08.07.24\ um\ 12.00.jpeg) no-repeat center center/cover;
     height: 300px;
     position: relative;
     color: white;
@@ -19,18 +29,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    
+    
 }
 
 .banner-content h1 {
     margin: 0;
-    font-size: 3em;
+
+    
+    
 }
 
 .intro {
     background-color: white;
     padding: 20px;
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -50,8 +67,8 @@ body {
 
 .step {
     display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+    align-items: top;
+    margin-bottom: 70px;
 }
 
 .text, .image {
@@ -59,7 +76,9 @@ body {
 }
 
 .text {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
 .image img {
@@ -67,14 +86,7 @@ body {
     height: auto;
 }
 
-/* Gradient-Effekt für Bilder */
-.image.left img {
-    mask-image: linear-gradient(to left, transparent 0%, white 35%);
-}
 
-.image.right img {
-    mask-image: linear-gradient(to right, transparent 0%, white 35%);
-}
 
 .left {
     order: 1;
@@ -103,4 +115,100 @@ body {
     order: 1;
 }
 
+/* Container für die ausklappbare Box */
+.details-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #4ea858;
+    
+}
 
+
+/* Details Box */
+.details {
+    display: none;
+    margin-top: 0px;
+    padding: 10px;
+    
+}
+
+/* Wenn .details angezeigt wird, entferne die untere Linie von .details-toggle */
+.details-toggle.active {
+    border-bottom: none;
+}
+
+/* Linie unter .details hinzufügen, wenn angezeigt */
+.details.active {
+    border-bottom: 1px solid #4ea858;
+}
+
+.details-toggle .plus {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#link {
+    font-size: larger;
+}
+
+#Moodboard {
+    width: 50%;
+    height: inherit;
+    margin-left: 0px;
+}
+
+#Storyboard {
+    width: 50%;
+    height: inherit;
+    position: relative;
+    margin-left: 350px;
+    margin-top: -400px;
+    margin-bottom: 46px;
+}
+
+.ms {
+    display: flex; /* Flexbox verwenden */
+    width: 100%; /* Volle Breite des Elternelements */
+    height: inherit; /* Vererben Sie die Höhe, falls erforderlich */
+}
+
+#Moodboard, #Storyboard {
+    width: 50%; /* Jedes Element nimmt die Hälfte der Breite des Containers ein */
+    height: auto; /* Automatische Höhe basierend auf dem Inhalt */
+    box-sizing: border-box; /* Box-Sizing: Border-Box verwenden, um Padding und Border in der Breite zu berücksichtigen */
+    padding: 10px; /* Optional: Innenabstand für die Bilder */
+}
+
+#video {
+    width: 65%;
+    height: inherit;
+}
+
+#Film{
+    width: 70%; 
+    height:inherit
+
+}
+
+.outro {
+    background-color: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #4ea858;
+}
+
+footer {
+    background-color: #4ea858;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+  }

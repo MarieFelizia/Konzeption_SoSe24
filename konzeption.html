@@ -16,38 +16,56 @@
     </header>
 
     <div class="intro">
-        <h2>Die Projektdokumentation</h2>
-        <p>Hallo!<br>Unsere Namen sind Marie Eckel und Alexa Fuchs. 
-            Im Rahmen des Moduls Krativkonzeption an der Hochschule Furtwangen entwickelten wir unser eigenes Videoprojekt zum Thema Umweltschutz Schwarzwald. 
-            Den Werdegang des Videos und unser Vorgehen erklären die folgenden sechs Schritte von der ersten Idee bis zum fertigen Projekt. 
-            <br>Unseren Film kannst du HIER anschauen. <br>Viel Spaß!</p>    
+        <h2>Projektdokumentation</h2>
+        <p>Auf dieser kleinen Micropage findest du alles zu unserem Video „Schützen durch Schätzen“ <br> <br>
+
+            Um direkt zum Video zu gelangen, klicke einfach <a id="link" href="https://www.youtube.com/watch?v=lduzzq7yKVo" target="_blank" rel="noopener noreferrer">HIER.</a> Oder scrolle ganz nach unten. <br> <br>
+            
+            Ansonsten klick dich gerne durch die Website und schau dir den Prozess von unserem Video von Anfang bis Ende an.  <br>Viel Spaß!</p>    
     </div>
 
-    <div class="container">
+    
         <div class="step">
             <div class="text left">
-                <h2>Die Idee</h2>
-                <p>
-                    Unser Video Projekt „Schützen durch schätzen“, erinnert den Zuschauer an die ursprüngliche Einstellung zur Natur. 
-                    Dabei wird der Wert der Natur vermittelt, in dem wir die Verbundenheit zwischen Mensch und Natur darstellen. 
-                    Das Video soll die Sinne fürs Detail schärfen – gleichermaßen hören und sehen.            
-                </div>
-
+                <h2>Idee</h2>
+                <p>Das Video Projekt „Schützen durch schätzen“, erinnert den Zuschauer an die ursprüngliche Einstellung zur Natur. 
+                    Dabei wird der Wert der Natur vermittelt, in dem es die Verbundenheit zwischen Mensch und Natur darstellt. 
+                    Das Video soll die Sinne fürs Detail schärfen – gleichermaßen hören und sehen.</p>
+                    <div class="details-toggle" onclick="toggleDetails(this)">
+                        <span>Details</span> <span class="plus">+</span>
+                    </div>
+                    <div class="details">
+                    <p>Hier ist unser Inspirationsvideo:</p>
+                    <a href ="https://www.youtube.com/watch?v=lduzzq7yKVo" target="_blank">zum Video</a>
+                    </div>
+            </div>
             <div class="image right">
                 <img src="Baum.jpeg" alt="Bild zu Schritt 1">
             </div>
         </div>
 
 
+        
         <div class="step">
             <div class="image left">
-                <img src="schwarzwald.jpeg" alt="Bild zu Schritt 2">
+                <img src="Rinde.JPG" alt="Bild zu Schritt 2">
             </div>
             <div class="text right">
                 <h2>Konzept</h2>
-                <p>Ursprünglich wollten wir diese Botschaft überwiegend mit Bildvergleichen von Mensch und Natur ausdrücken. 
-                    Dabei hatten wir den Plan, die optischen Parallelen im Split Screen Format gegenüberzustellen und den Fokus des Zuschauers über die Akustik zu lenken.
+                <p>Ursprünglich sollte die Botschaft hauptsächlich durch Bildvergleiche zwischen Mensch und Natur vermittelt werden. 
+                    Geplant war, optische Parallelen im Split-Screen-Format gegenüberzustellen und die Aufmerksamkeit des Zuschauers durch die Akustik zu lenken.
                     </p>
+                    
+                    <div class="details-toggle" onclick="toggleDetails(this)">
+                        <span>Details</span> <span class="plus">+</span>
+                    </div>
+                    <div class="details">
+                        <div> 
+                            <img id="Moodboard" src="Moodboard.jpeg" alt="Moodboard"> </div>   
+                            <div><img id="Storyboard" src="Storyboard.jpg" alt="Storyboard"> </div>
+                            </div> 
+                    </div>
+
             </div>
         </div>
 
@@ -56,28 +74,46 @@
             <div class="text left">
                 <h2>Probevideo</h2>
                 <p>Für unser erstes Probe-Video “filmten wir einfach drauf los“. 
-                    Wir experimentierten mit verschiedenen Motiven und Perspektiven, die der Wald hergibt. 
-                    Ohne konkreten Plan entstanden Videoaufnahmen, die Potential zur Optimierung hatten. 
-                    In der Post Production spielten wir mit dem Kontrast zwischen dem Gefühl “da stimmt was nicht“ (menschliche Geräusche als Störfaktor) und der visuellen Harmonie.</p>
-            </div>
+                    Im ersten Probevideo wurde ohne festen Plan gefilmt. 
+                    Verschiedene Motive und Perspektiven im Wald wurden experimentell aufgenommen, 
+                    wobei Aufnahmen mit Potenzial zur Optimierung entstanden. In der Postproduktion wurde mit dem Kontrast zwischen dem Gefühl, 
+                    dass "etwas nicht stimmt" (Akustik), und der visuellen Harmonie gespielt.</p>
+                    <div class="details-toggle" onclick="toggleDetails(this)">
+                        <span>Details</span> <span class="plus">+</span>
+                    </div>
+                    <div class="details">
+                        <video id="video" controls src="projekt_zuhoeren_2.mov"></video>
+                        <p>Komprimiertes Video <br>
+                         <a href="YOutubelink">klicke hier</a> für das Originalvideo</p>
+                    </div>
+                </div>
             <div class="image right">
-                <img src="Rinde.JPG" alt="Bild zu Schritt 3">
+                <img src="Probebild.HEIC" alt="Bild zu Schritt 3">
             </div>
         </div>
 
         <div class="step">
             <div class="text left">
                 <h2>Feinjustierung</h2>
-                <p>Nach unserem ersten Versuch, stellten wir fest, dass wir unsere Zielgruppe und die Plattform genauer definieren müssen. 
-                    Um unsere Botschaft in einem geeigneten Stil zu verpacken, entschieden wir uns dafür, 
-                    dass das Video in Tourismus Zentren oder im Naturpark Schwarzwald zu sehen sein soll. 
-                    Im Gegenteil zu schnellen Schnitten und Entertainment nahmen wir uns vor, 
-                    dem Video emotionale Tiefe zu verleihen und dem Zuschauer Raum für seine persönliche Interpretation zu geben. 
-                    Durch dichte und intensive Atmosphäre und die visuellen und auditiven Kontraste, 
-                    möchten wir eine fast unangenehme einzigartige Erfahrung schaffen, die den Betrachter berührt und zum Nachdenken anregt.</p>
-            </div>
+                <p>Nach dem ersten Versuch wurde festgestellt, dass die Zielgruppe und die geeignete Plattform genauer definiert werden mussten. 
+                    Das Video soll nun in Tourismuszentren oder im Naturpark Schwarzwald präsentiert werden. Statt schneller Schnitte und unterhaltsamer Elemente wird das Ziel verfolgt, 
+                    dem Video emotionale Tiefe zu verleihen und dem Zuschauer Raum für persönliche Interpretation zu lassen. 
+                    Eine dichte und intensive Atmosphäre sowie visuelle und auditive Kontraste sollen eine einzigartige Erfahrung schaffen, 
+                    die den Betrachter berührt und zum Nachdenken anregt.</p>
+                    <div class="details-toggle" onclick="toggleDetails(this)">
+                        <span>Details</span> <span class="plus">+</span>
+                    </div>
+                    <div class="details">
+                        <p>Medium: <br>
+                           digitaler Kurzfilm <br>
+                           <br>
+                        Technisches Setup: <br>
+                        Canon 80D, Makro-Objektiv und Stativ 
+                        </p>
+                    </div>
+                </div>
             <div class="image left">
-                <img src="Blume.JPG" alt="Bild zu Schritt 3">
+                <img src="Detailbild.png" alt="Bild zu Schritt 3">
             </div>
         </div>
 
@@ -85,43 +121,38 @@
         <div class="step">
             <div class="text left">
                 <h2>Finale Umsetzung</h2>
-                <p>Im zweiten Dreh lichteten wir die Motive ab, die für die Umsetzung unseres überdachten Konzepts notwendig sind. 
-                    Dabei konzentrieren wir uns auf neue ausdrucksstarke Motive, Detailaufnahmen und Motive vom ersten Dreh, die wir perfektionieren können. 
-                    In der Post Production setzen wir auf die menschlichen Geräusche als einzigen Störfaktor, 
-                    die ohne spannungsaufbauende Musik besser wirken können. 
-                    Damit der Betrachter alle schönen Details wahrnehmen kann und ihm das Unwohlsein aufgedrängt werden kann, 
-                    verlängerten wir die Dauer der einzelnen Einstellungen.</p>
-            </div>
+                <p>Beim zweiten Dreh lag der Fokus auf Motiven, die das durchdachte Konzept unterstützen. 
+                    Neue ausdrucksstarke Motive sowie optimierte Detailaufnahmen und Szenen vom ersten Dreh wurden aufgenommen. 
+                    In der Postproduktion wurden menschliche Geräusche als einziger Störfaktor eingesetzt, die ohne spannungsaufbauende Musik intensiver wirken. 
+                    Um dem Betrachter die Möglichkeit zu geben, alle schönen Details wahrzunehmen und gleichzeitig ein Gefühl des Unbehagens zu erzeugen, 
+                    wurde die Dauer der einzelnen Einstellungen verlängert.</p>
+                    <div class="details-toggle" onclick="toggleDetails(this)">
+                        <span>Details</span> <span class="plus">+</span>
+                    </div>
+                    <div class="details">
+                        <p>Herausforderungen und Learnings: <br>
+                        <li>Vorstellungen und Erwartungen werden nicht direkt erfüllt</li> 
+                        <li>Stilrichtung genau festlegen</li>    
+                        <li>Herumprobieren und Experimente bringen Ideen und Klarheit</li>
+         
+
+
+                    </p>
+                    </div>
+                </div>
             <div class="image right">
-                <img src="schwarzwald-urlaub-wandern-noerdlicher-schwarzwald-nordschwarzwald.jpg.webp" alt="Bild zu Schritt 3">
+                <img src="Blätter.png" alt="Bild zu Schritt 3">
             </div>
         </div>
 
 
-        <div class="step">
-            <div class="text left">
-                <h2>Rückblick</h2>
-                <p>Beschreibung des dritten Schrittes.</p>
-            </div>
-            <div class="image right">
-                <img src="image3.jpg" alt="Bild zu Schritt 3">
-            </div>
-        </div>
-
-
-        <div class="step">
-            <div class="text left">
-                <h2>Schritt 3</h2>
-                <p>Beschreibung des dritten Schrittes.</p>
-            </div>
-            <div class="image right">
-                <img src="image3.jpg" alt="Bild zu Schritt 3">
-            </div>
-        </div>
-        <!-- Weitere Schritte können hier hinzugefügt werden -->
-    </div>
-
+        <footer>
+            <p>
+              Alexa Fuchs, 272013 | Marie Eckl, 272409 <br>
+              Modul Kreativkonzeption | Hochschule Furtwangen | Sommersemester 2024
+            </p>
+          </footer>
     
 </body>
 
-</html>
+</html> 
